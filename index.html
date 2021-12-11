@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#media" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MEDIA</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#media" class="w3-bar-item w3-button" onclick="toggleFunction()">MEDIA</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">TESS <span class="w3-hide-small">CUNNINGHAM</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Coluatura Soprano</em></p>
+  <p>My name is Tess Cunningham and I’m currently a student at Loyola University New Orleans studying Music Industry and minoring in classical voice. I've been taking vocal lessons and participating in choirs for 8 years. I now take private vocal lessons with Dreux Montegut and have been in choirs conducted by Dr. Meg Frazier. I’m skillful in sight singing and can learn classical pieces quickly. My repertoire includes pieces in French, Italian, Latin, English and German.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Tess Cunningham</b></p><br>
+      <img src="images/Tess_Cunningham_headshot.JPG" alt="Tess Cunningham Headshot"
+       width="250" height="320">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p><strong>Junior Undergrad</strong><br><br>
+
+        <strong>Loyola University New Olreans</strong><br><br>
+        
+       <em>Music Industries Major</em><br>
+        
+        <em>Classical Voice Minor</em><br><br>
+        
+        <strong>Vocal Professor:</strong> Dreux Montegut<br><br>
+        
+        Chorale and SSA conducted by Dr. Meg Frazier <em>2019-2020</em></p>
+    </div>
+  </div>
+  <p class="w3-xlarge w3-center w3-padding-10">REPERTOIRE</p>
+  <p>
+      <ul><em>Claude Debussy,</em> Nuit d'étoiles</ul>
+      <ul><em>Earnest Charles,</em> When I Have Sung My Songs</ul>
+      <ul><em>Gabriel Fauré,</em> Après un rêve</ul>
+      <ul><em>Gabriel Fauré,</em> Pie Jesu</ul>
+      <ul><em>Henry Purcell,</em> Hark The Echoing Air</ul>
+      <ul><em>Händle,</em>Oh! Had I Jubal's Lyre </ul>
+      <ul><em>Händle,</em>Where'er You Walk</ul>
+      <ul><em>Landon Ronald,</em> Down In The Forest</ul>
+      <ul><em>Mozart, </em> Deh vieni non tardar</ul>
+      <ul><em>Mozart, </em> Un moto di gioia</ul>
+      <ul><em>Mozart, </em> Voi que sapete</ul>
+      <ul><em>Pascoli Giovanni,</em> Fiocca la neve</ul>
+      <ul><em>Roger Quilter,</em> Music When soft Voices Die</ul>
+      <ul><em>Ricky Ian Gordon,</em> Will There Really Be a Morning</ul>
+      <ul><em>Schubert,</em> Ave maria</ul>
+      <ul><em>Victor Hugo,</em> Si mes vers</ul>
+      <ul><em>Wayne Shanklin,</em> Chanson d'amour</ul>
+  </p>
+  
+</div>
+<!--- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="media">
+  <h3 class="w3-center">MEDIA</h3>
+
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class=" w3-center">
+    <div class="w3-col m3">
+      <audio controls>
+        <source src="audio/Pie Jesu.m4a" type="audio./ogg">
+        <source src="audio/Pie Jesu.m4a" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+  
+    </div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT ME</h3>
+  <p class="w3-center"><em>Bookings and Inquiries</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> New Orleans, LA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 225 270 7314<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: tessrcunningham@gmail.com<br>
+      </div>
+      <p>Leave a message for any questions or bookings:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/tess.cunningham.12" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/in/tess-cunningham-a248b51b5/" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
